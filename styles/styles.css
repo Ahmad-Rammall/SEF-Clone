@@ -1,0 +1,30 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px;
+}
+
+header img {
+  width: 180px;
+}
+
+.menu-btn {
+  background-color: #363738;
+  color: white;
+  font-size: 25px;
+  padding: 7px;
+  border-radius: 7px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
