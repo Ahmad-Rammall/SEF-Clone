@@ -206,22 +206,59 @@ header img {
 
 iframe {
   width: 90%;
-  /* height: 100%; */
   border: 10px #28eea7 solid;
   border-radius: 10px;
 }
 
 /* MilesTones Section */
 
-.milestones-container {
-  position: relative;
+.milestones-section {
   background-color: white;
 }
 
 .milestone-container {
-  padding-top: 200px;
-  width: 100%;
-  height: 50%;
   background-color: #f1f2f3;
-  color: black;
+  color: #363738;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 80px;
+}
+
+.milestone-title {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.percentage {
+  font-size: 100px;
+}
+
+.milestone-subtitle {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.milestone-big {
+  width: 50%;
+}
+
+.milestone-small {
+  display: inline-block;
+  margin: 0;
+  max-width: 40%;
+}
+
+.milestones-container {
+  display: flex;
+}
+
+.milestone-container-right {
+  max-width: 50%;
+}
+
+.milestone-row{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
