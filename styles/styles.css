@@ -318,8 +318,36 @@ iframe {
   padding-right: 50px;
 }
 
-.colored-text {
+.yellow-text {
   color: #ffc635;
+}
+
+.green-text {
+  color: #28eea7;
+}
+
+.purple-text {
+  color: #9864da;
+}
+
+.pink-text{
+  color: #fb508e;
+}
+
+.yellow-background {
+  background-color: #ffc635;
+}
+
+.green-background {
+  background-color: #28eea7;
+}
+
+.purple-background {
+  background-color: #9864da;
+}
+
+.pink-background{
+  background-color: #fb508e;
 }
 
 .prog-details-left {
@@ -644,7 +672,7 @@ footer {
   color: white;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   header {
     top: 40px;
   }
@@ -802,10 +830,10 @@ footer {
     font-size: 20px;
   }
 
-  .program-details{
+  .program-details {
     font-size: 12px;
     width: 100%;
-    padding: 10px
+    padding: 10px;
   }
 
   .details-wrapper {
@@ -814,89 +842,88 @@ footer {
     align-items: center;
   }
 
-  .prog-img{
+  .prog-img {
     width: 85%;
     margin-top: 10px;
   }
 
-  .prog-right{
+  .prog-right {
     text-align: center;
   }
 
   /* Hire Section */
 
-  .hire-section{
+  .hire-section {
     height: 120vh;
   }
 
   /* Testimonials Section */
 
-  .testimonial-container{
+  .testimonial-container {
     height: 90%;
     flex-direction: column;
   }
 
   /* Partners Section */
 
-  .partners-section{
+  .partners-section {
     height: 70vh;
     display: flex;
     flex-direction: column;
   }
 
-  .partner-row{
+  .partner-row {
     margin: 0 auto;
   }
 
-  .partner-img{
+  .partner-img {
     width: 80px;
     height: 80px;
     margin: 5px;
   }
 
-  .partner-row{
+  .partner-row {
     max-width: 300px;
   }
 
   /* Subscribe Section */
 
-  .subscribe-section{
+  .subscribe-section {
     height: 30vh;
   }
 
-  .subscribe-title{
+  .subscribe-title {
     font-size: 18px;
   }
 
-  .subscribe-subtitle{
+  .subscribe-subtitle {
     font-size: 15px;
   }
 
-  .subscribe-right{
+  .subscribe-right {
     flex-direction: column;
     width: 100vw;
   }
 
-  .submit-email{
+  .submit-email {
     text-align: right;
   }
 
   /* Footer */
 
-  footer{
+  footer {
     padding: 20px;
     height: 80vh;
   }
 
-  .top-footer{
+  .top-footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
 
-  .footer-left{
+  .footer-left {
     text-align: center;
     margin: 20px auto;
   }
-
 }
