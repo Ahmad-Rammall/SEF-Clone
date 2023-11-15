@@ -12,6 +12,10 @@ body {
   font-family: Noto Sans Mono, sans-serif;
 }
 
+.btn:hover{
+  cursor: pointer;
+}
+
 /* Header Section */
 
 header {
@@ -132,10 +136,6 @@ header img {
   font-weight: bold;
   font-size: 15px;
   color: #363738;
-}
-
-.intro-btn:hover {
-  cursor: pointer;
 }
 
 .intro-left-btn {
@@ -357,7 +357,7 @@ iframe {
   background-color: #363738;
 }
 
-.hire-title{
+.white-title{
   color: #f1f2f3;
 }
 
@@ -376,7 +376,7 @@ iframe {
   padding: 40px;
 }
 
-.centre-container{
+.center-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -466,4 +466,46 @@ iframe {
 .person-big{
   border-radius: 10px;
   width: 400px;
+}
+
+.nav-dots{
+  display: flex;
+  gap: 40px;
+}
+
+.nav-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+/* FAQs Section */
+
+.faqs-section{
+  background-color: #363738;
+}
+
+.question{
+  background-color: #232323;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.question-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.question-description{
+  display: none;
+}
+
+.link{
+  text-decoration: none;
+  color: #f1f2f3;
+  text-align: right;
 }
