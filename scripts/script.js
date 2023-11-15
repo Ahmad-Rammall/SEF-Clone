@@ -1,0 +1,1 @@
+const programsFilters = document.querySelectorAll()

@@ -25,6 +25,7 @@ header {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   top: 70px;
   left: 0;
   right: 0;
@@ -643,7 +644,7 @@ footer {
   color: white;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 481px) and (max-width: 1000px) {
   header {
     top: 40px;
   }
@@ -790,7 +791,7 @@ footer {
   /* Programs Section */
 
   .programs-section {
-    height: 110vh;
+    height: 120vh;
   }
 
   .programs-container {
@@ -825,7 +826,7 @@ footer {
   /* Hire Section */
 
   .hire-section{
-    height: 110vh;
+    height: 120vh;
   }
 
   /* Testimonials Section */
@@ -838,7 +839,7 @@ footer {
   /* Partners Section */
 
   .partners-section{
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
   }
@@ -860,7 +861,7 @@ footer {
   /* Subscribe Section */
 
   .subscribe-section{
-    height: 25vh;
+    height: 30vh;
   }
 
   .subscribe-title{
