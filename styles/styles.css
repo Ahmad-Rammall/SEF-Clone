@@ -509,3 +509,24 @@ iframe {
   color: #f1f2f3;
   text-align: right;
 }
+
+/* Partners Section */
+
+.partners-section{
+  height: 60vh;
+}
+
+.partner-row{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.partner-img{
+  width: 130px;
+  height: 130px;
+}
+
+.partner{
+  object-fit: cover;
+}
