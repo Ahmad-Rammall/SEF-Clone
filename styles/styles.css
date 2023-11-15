@@ -330,7 +330,7 @@ iframe {
   color: #9864da;
 }
 
-.pink-text{
+.pink-text {
   color: #fb508e;
 }
 
@@ -346,7 +346,7 @@ iframe {
   background-color: #9864da;
 }
 
-.pink-background{
+.pink-background {
   background-color: #fb508e;
 }
 
@@ -466,6 +466,17 @@ iframe {
 }
 
 /* Testimonials Section */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 50%;
+  overflow: hidden;
+}
+
+/* Additional styles for active dot */
+.dot.active-dot {
+  background-color: black;
+}
 
 .testimonials-section {
   height: 120vh;
@@ -475,14 +486,23 @@ iframe {
   background-color: #363738;
   width: 90%;
   display: flex;
-  padding: 20px;
   border-radius: 10px;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .testimonial-left {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex: 1;
+}
+
+.testimonial-right img {
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .testimonial-person {
@@ -533,7 +553,7 @@ iframe {
 }
 
 .question-description {
-  display: none;
+  /* display: none; */
 }
 
 .link {
@@ -563,6 +583,14 @@ iframe {
 
 .partner {
   object-fit: contain;
+}
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
 }
 
 /* Subscribe Section */

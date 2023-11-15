@@ -1,65 +1,61 @@
-const fcsFilter = document.getElementById('fcs')
-const fswFilter = document.getElementById('fsw')
-const fsdFilter = document.getElementById('fsd')
-const uixFilter = document.getElementById('uix')
-const coloredText = document.getElementById('colored-text')
-const progImg = document.getElementById('progImg')
+const fcsFilter = document.getElementById("fcs");
+const fswFilter = document.getElementById("fsw");
+const fsdFilter = document.getElementById("fsd");
+const uixFilter = document.getElementById("uix");
+const coloredText = document.getElementById("colored-text");
+const progImg = document.getElementById("progImg");
 
-fcsFilter.addEventListener('click' , () => {
-    changeProgramsInfo('fcs')
-    fcsFilter.classList.add('selected-filter')
-    fswFilter.classList.remove('selected-filter')
-    fsdFilter.classList.remove('selected-filter')
-    uixFilter.classList.remove('selected-filter')
-    fcsFilter.style.color = '#ffc635'
-    fswFilter.style.color = '#000'
-    uixFilter.style.color = '#000'
-    fsdFilter.style.color = '#000'
-    coloredText.style.color = '#ffc635'
-    progImg.setAttribute('src' , './assets/fcs.png')
-})
+fcsFilter.addEventListener("click", () => {
+  changeProgramsInfo("fcs");
+  fcsFilter.classList.add("selected-filter");
+  removeClass([fswFilter, fsdFilter, uixFilter]);
+  fcsFilter.style.color = "#ffc635";
+  addBlackColor([fswFilter,uixFilter,fsdFilter])
+  coloredText.style.color = "#ffc635";
+  progImg.setAttribute("src", "./assets/fcs.png");
+});
 
-fswFilter.addEventListener('click' , () => {
-    changeProgramsInfo('fsw')
-    fswFilter.classList.add('selected-filter')
-    fcs.classList.remove('selected-filter')
-    fsdFilter.classList.remove('selected-filter')
-    uixFilter.classList.remove('selected-filter')
-    fcsFilter.style.color = '#000'
-    fswFilter.style.color = '#28eea7'
-    uixFilter.style.color = '#000'
-    fsdFilter.style.color = '#000'
-    coloredText.style.color = '#28eea7'
-    progImg.setAttribute('src' , './assets/fsw.png')
-})
+fswFilter.addEventListener("click", () => {
+  changeProgramsInfo("fsw");
+  fswFilter.classList.add("selected-filter");
+  removeClass([fcsFilter, fsdFilter, uixFilter]);
+  fswFilter.style.color = "#28eea7";
+  addBlackColor([fcsFilter,uixFilter,fsdFilter])
+  coloredText.style.color = "#28eea7";
+  progImg.setAttribute("src", "./assets/fsw.png");
+});
 
-fsdFilter.addEventListener('click' , () => {
-    changeProgramsInfo('fsd')
-    fsdFilter.classList.add('selected-filter')
-    fswFilter.classList.remove('selected-filter')
-    fcsFilter.classList.remove('selected-filter')
-    uixFilter.classList.remove('selected-filter')
-    fcsFilter.style.color = '#000'
-    fswFilter.style.color = '#000'
-    uixFilter.style.color = '#000'
-    fsdFilter.style.color = '#9864da'
-    coloredText.style.color = '#9864da'
-    progImg.setAttribute('src' , './assets/fsd.png')
-})
+fsdFilter.addEventListener("click", () => {
+  changeProgramsInfo("fsd");
+  fsdFilter.classList.add("selected-filter");
+  removeClass([fswFilter, fcsFilter, uixFilter]);
+  addBlackColor([fcsFilter,fswFilter,uixFilter])
+  fsdFilter.style.color = "#9864da";
+  coloredText.style.color = "#9864da";
+  progImg.setAttribute("src", "./assets/fsd.png");
+});
 
-uixFilter.addEventListener('click' , () => {
-    changeProgramsInfo('uix')
-    uixFilter.classList.add('selected-filter')
-    fswFilter.classList.remove('selected-filter')
-    fsdFilter.classList.remove('selected-filter')
-    fcsFilter.classList.remove('selected-filter')
-    fcsFilter.style.color = '#000'
-    fswFilter.style.color = '#000'
-    uixFilter.style.color = '#fb508e'
-    fsdFilter.style.color = '#000'
-    coloredText.style.color = '#fb508e'
-    progImg.setAttribute('src' , './assets/uix.png')
-})
+uixFilter.addEventListener("click", () => {
+  changeProgramsInfo("uix");
+  uixFilter.classList.add("selected-filter");
+  removeClass([fswFilter, fsdFilter, fcsFilter]);
+  uixFilter.style.color = "#fb508e";
+  addBlackColor([fcsFilter,fswFilter,fsdFilter])
+  coloredText.style.color = "#fb508e";
+  progImg.setAttribute("src", "./assets/uix.png");
+});
+
+const removeClass = (arr) => {
+  arr.forEach((element) => {
+    element.classList.remove("selected-filter");
+  });
+};
+
+const addBlackColor = (arr) => {
+  arr.forEach((element) => {
+    element.style.color = "#000";
+  });
+};
 
 const changeProgramsInfo = (id) => {
   const section = document.getElementsByClassName("programs-section")[0];
@@ -102,3 +98,19 @@ const changeProgramsInfo = (id) => {
 
 // FAQs Section
 
+document.getElementById('q-1').addEventListener('click' , () => {
+    toggleElement('answer-1')
+})
+
+document.getElementById('q-2').addEventListener('click' , () => {
+    toggleElement('answer-2')
+})
+
+document.getElementById('q-3').addEventListener('click' , () => {
+    toggleElement('answer-3')
+})
+
+const toggleElement = (element) => {
+    document.getElementById(`${element}`).classList.toggle("hidden")
+    document.getElementById(`${element}`).classList.toggle("visible")
+}
