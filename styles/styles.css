@@ -277,20 +277,29 @@ iframe {
 .programs-filters {
   display: flex;
   justify-content: flex-start;
-  gap: 100px;
-  font-size: 20px;
+  gap: 10px;
+  font-size: 15px;
   color: #363738;
   font-weight: 900;
-  margin-bottom: 20px;
 }
 
-.filter{
-    cursor: pointer;
+.filter {
+  cursor: pointer;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.selected-filter{
+  background-color: #363738;
+  color: #ffc635;
 }
 
 .program-details {
   background-color: #363738;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 10px;
   margin-right: 80px;
   padding: 40px;
 }
@@ -333,10 +342,128 @@ iframe {
   margin-right: 10px;
 }
 
-.learn-more{
-    text-align: right;
+.learn-more {
+  text-align: right;
 }
 
 .prog-img {
   width: 300px;
+}
+
+/* Hire Section */
+
+.hire-section{
+  height: 120vh;
+  background-color: #363738;
+}
+
+.hire-title{
+  color: #f1f2f3;
+}
+
+.hire-section .black-dot{
+  background-color: white;
+}
+
+.hire-section .gray-dot{
+  background-color: gray;
+}
+
+.hire-container{
+  background-color: #232323 ;
+  width: 90%;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.centre-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hire-cont-title{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.hire-subtitle{
+  background-color: #363738;
+  display: inline-block;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.colored-green{
+  color: #28eea7;
+  font-weight: 800;
+}
+
+.hire-description{
+  color: #f1f2f3;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.hire-q{
+  margin: 15px 0;
+}
+
+.hire-btn{
+  width: 100%;
+  text-align: right;
+  background-color: #363738;
+  color: #f1f2f3;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.hr-img{
+  width: 150px;
+}
+
+/* Testimonials Section */
+
+.testimonials-section{
+  height: 120vh;
+}
+
+.testimonial-container{
+  background-color: #363738;
+  width: 90%;
+  display: flex;
+  padding: 20px;
+}
+
+.testimonial-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.testimonial-person{
+  display: flex;
+  align-items: center;
+}
+
+.person-img{
+  border-radius: 50%;
+  width: 50px;
+}
+
+.person-big{
+  border-radius: 10px;
+  width: 400px;
 }
