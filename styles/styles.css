@@ -44,18 +44,19 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 0 100px;
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 200%;
 }
 
 .left-menu{
   display: flex;
   flex-direction: column;
+  margin: 0 70px;
+  width: 500px;
 }
 
 .top-container{
-  width: 500px;
   height: 400px;
-  margin: 0 70px;
   background-color: #363738;
   border-radius: 10px;
   padding: 50px;
@@ -92,8 +93,7 @@ body {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  width: 500px;
-  margin: 10px 70px;
+  margin: 10px 0;
   border-radius: 10px;
 }
 
@@ -830,6 +830,22 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  /* Menu Modal */
+
+  .navigations{
+    margin: 0 0 0 100px;
+    line-height: 200%;
+  }
+
+  .top-container{
+    width: 400px;
+    height: 100%;
+  }
+
+  .modal-btns{
+    margin-top: 50px;
+  }
+  
   .header {
     top: 40px;
   }
@@ -970,6 +986,24 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  
+  /* Menu Modal */
+
+  .modal-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigations{
+    margin: 0;
+    align-items: center;
+  }
+
+  .left-menu{
+    width: 100%;
+    align-items: center;
+  }
+
   .header {
     top: 10px;
     margin: 0;
