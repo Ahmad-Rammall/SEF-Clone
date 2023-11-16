@@ -1,3 +1,24 @@
+// Reload When Clicking On The Logo
+document.getElementById('headLogo').addEventListener('click' , ()=>{
+  window.location.reload();
+})
+
+// Menu Modal
+
+document.getElementById('closeModal').addEventListener('click' , () => {
+  document.getElementsByClassName('menu-modal')[0].style.display = 'none'
+})
+
+document.getElementById('openModal').addEventListener('click' , () => {
+  document.getElementsByClassName('menu-modal')[0].style.display = 'block'
+})
+
+document.querySelectorAll('.nav').forEach(nav => {
+  nav.addEventListener('click' , () => {
+    document.getElementsByClassName('menu-modal')[0].style.display = 'none'
+  })
+})
+
 // Typing Effect
 
 const typingText = document.getElementById("typingText");
@@ -34,8 +55,8 @@ const changeBackground = (index) => {
 const changeTextColor = (index) => {
   switch (index) {
     case 0:
-      title.style.color = "black";
-      description.style.color = "black";
+      title.style.color = "#1e1e1f";
+      description.style.color = "#1e1e1f";
       afterElement.style.backgroundColor = "#2ae29ee3";
       break;
     case 1:
@@ -73,6 +94,17 @@ document.addEventListener("DOMContentLoaded", function () {
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
+document.getElementById('btnGoToPrograms').addEventListener('click' , () => {
+  smoothScroll("programsSection")
+})
+
+document.getElementById('btnGoToHire').addEventListener('click' , () => {
+  smoothScroll("hireSection")
+})
+
+function smoothScroll(targetId) {
+  document.getElementById(`${targetId}`).scrollIntoView({behavior:'smooth'})
+}
 
 // Programs Section
 

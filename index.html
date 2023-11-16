@@ -8,19 +8,66 @@
     <title>SE Factory - Want to become a software engineer?</title>
   </head>
 
-  <header>
-    <img src="./assets/se-logo (2).png" alt="se-logo" />
-    <div class="btn menu-btn"><i class="fa-solid fa-bars"></i></div>
-  </header>
+  <div class="header">
+    <img src="./assets/se-logo (2).png" alt="se-logo" id="headLogo" />
+    <div class="btn menu-btn" id="openModal"><i class="fa-solid fa-bars"></i></div>
+  </div>
   <body>
+    <!-- MENU MODAL -->
+    <div class="menu-modal">
+      <div class="header">
+        <img src="./assets/se-logo (2).png" alt="se-logo" />
+        <div class="btn menu-btn" id="closeModal">X</div>
+      </div>
+      <div class="modal-container">
+        <div class="navigations">
+          <a href="#introSection" class="link nav">Home</a>
+          <a href="#videoSection" class="link nav">Hello World!</a>
+          <a href="#milestonesSection" class="link nav">Milestones</a>
+          <a href="#programsSection" class="link nav">Programs</a>
+          <a href="#hireSection" class="link nav">Hire</a>
+          <a href="#testimonialsSection" class="link nav">Testimonials</a>
+          <a href="#faqsSection" class="link nav">FAQs</a>
+          <a href="#contactSection" class="link nav">Contact us</a>
+          <a href="#partnersSection" class="link nav">Partners</a>
+          <a href="#subscribeSection" class="link nav">Newsletter</a>
+        </div>
+
+        <div class="left-menu">
+          <div class="top-container">
+            <div class="top-title">
+              <span class="green-text">> </span>Account
+            </div>
+            <div class="top-subtitle">
+              /* Login with existing or create a new account in order to apply
+              to SEF programs */
+            </div>
+            <div class="modal-btns">
+              <button class="btn modal-btn login">LOG IN</button>
+              <button class="btn modal-btn">SIGN UP</button>
+            </div>
+          </div>
+
+          <div class="bottom-container">
+            <img src="./assets/hr-factory.svg" alt="" class="modal-hr-img" />
+            <div>
+              <div class="bottom-title">Global Companies,</div>
+              <div class="bottom-title">Meet Lebanese Talent</div>
+              <div class="bottom-container-desc">All You Nedd To Launch a Local Team</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- INTRO SECTION -->
-    <div class="intro">
+    <div class="intro" id="introSection">
       <div class="intro-sec intro-left" id="leftIntroSection">
         <div class="after-element"></div>
         <div class="content">
           <h2 class="intro-title intro-title-left">WANT TO BECOME A</h2>
           <div class="intro-subtitle">
-            <span class="typing-text" id="typingText"></span><span class="cursor">_</span>
+            <span class="typing-text" id="typingText"></span
+            ><span class="cursor">_</span>
           </div>
           <div class="intro-desc intro-description-left">
             Jumpstart your journey in tech with our courses in Computer Science,
@@ -28,7 +75,9 @@
             hands-on experience and gain essential skills for a successful tech
             career.
           </div>
-          <button class="btn intro-btn intro-left-btn">#GET_TRAINED</button>
+          <button class="btn intro-btn intro-left-btn" id="btnGoToPrograms">
+            #GET_TRAINED
+          </button>
         </div>
       </div>
 
@@ -42,13 +91,15 @@
             skilled developers who are ready to hit the ground running and drive
             your success.
           </div>
-          <button class="btn intro-btn intro-right-btn">#HIRE_TALENT</button>
+          <button class="btn intro-btn intro-right-btn" id="btnGoToHire">
+            #HIRE_TALENT
+          </button>
         </div>
       </div>
     </div>
 
     <!-- VIDEO SECTION -->
-    <div class="video-container">
+    <div class="video-container" id="videoSection">
       <div class="section-header">
         <div class="section-header-left">
           <span class="arrow">></span>
@@ -61,12 +112,18 @@
         </div>
       </div>
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vG7SYQjODTs" frameborder="0" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/vG7SYQjODTs"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
 
     <!-- MILESTONES SECTION -->
-    <div class="milestones-section">
+    <div class="milestones-section" id="milestonesSection">
       <div class="section-header">
         <div class="section-header-left">
           <span class="arrow">></span>
@@ -124,7 +181,7 @@
 
     <!-- PROGRAMS SECTION -->
 
-    <div class="programs-section">
+    <div class="programs-section" id="programsSection">
       <div class="section-header">
         <div class="section-header-left">
           <span class="arrow">></span>
@@ -189,7 +246,7 @@
 
     <!-- HIRE TALENT SECTION -->
 
-    <div class="hire-section">
+    <div class="hire-section" id="hireSection">
       <div class="section-header">
         <div class="section-header-left">
           <span class="arrow">></span>
@@ -244,7 +301,7 @@
 
     <!-- TESTIMONIALS SECTION -->
 
-    <div class="testimonials-section">
+    <div class="testimonials-section" id="testimonialsSection">
       <div class="section-header">
         <div class="section-header-left">
           <span class="arrow">></span>
@@ -428,7 +485,7 @@
 
     <!-- FAQs SECTION -->
 
-    <div class="faqs-section">
+    <div class="faqs-section" id="faqsSection">
       <div class="section-header">
         <div class="section-header-left">
           <span class="arrow">></span>
@@ -510,7 +567,7 @@
 
     <!-- PARTNERS SECTION -->
 
-    <div class="partners-section">
+    <div class="partners-section" id="partnersSection">
       <div>
         <div class="section-header">
           <div class="section-header-left">
@@ -584,7 +641,7 @@
 
     <!-- SUBSCRIBE SECTION -->
 
-    <div class="subscribe-section">
+    <div class="subscribe-section" id="subscribeSection">
       <div class="subscribe-left">
         <div class="subscribe-title">
           Subscribe to our <span class="colored-green">newsletter</span>
@@ -607,25 +664,36 @@
     <script src="scripts/script.js"></script>
   </body>
 
-  <footer>
+  <!-- FOOTER -->
+
+  <footer id="footer">
     <div class="top-footer">
       <div class="nav-columns">
         <div class="nav-column">
           <div class="footer-title">SE FACTORY</div>
-          <div class="nav">Home</div>
-          <div class="nav">Hello World!</div>
-          <div class="nav">Milestones</div>
-          <div class="nav">Programs</div>
-          <div class="nav">Hire Talent</div>
+          <a href="#introSection" class="link nav" id="goIntro">Home</a>
+          <a href="#videoSection" class="link nav" id="goVideo">Hello World!</a>
+          <a href="#milestonesSection" class="link nav" id="goMilestones"
+            >Milestones</a
+          >
+          <a href="#programsSection" class="link nav" id="goPrograms"
+            >Programs</a
+          >
+          <a href="#hireSection" class="link nav" id="goHire">Hire Talent</a>
         </div>
 
         <div class="nav-column col2">
           <div class="nav"></div>
-          <div class="nav"></div>
-          <div class="nav">FAQs</div>
-          <div class="nav">Testimonials</div>
-          <div class="nav">Contact us</div>
-          <div class="nav">Partners</div>
+          <a href="#faqsSection" class="link nav" id="goFaqs">FAQs</a>
+          <a href="#testimonialsSection" class="link nav" id="goToTestimonials"
+            >Testimonials</a
+          >
+          <a href="#contactSection" class="link nav" id="goContact"
+            >Contact us</a
+          >
+          <a href="#partnersSection" class="link nav" id="goPartners"
+            >Partners</a
+          >
         </div>
       </div>
 
