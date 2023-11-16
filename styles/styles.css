@@ -583,16 +583,11 @@ iframe {
 }
 
 /* Testimonials Section */
+
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 50%;
-  overflow: hidden;
-}
-
-/* Additional styles for active dot */
-.dot.active-dot {
-  background-color: black;
+  width: 100%;
 }
 
 .testimonials-section {
@@ -601,25 +596,26 @@ iframe {
 
 .testimonial-container {
   background-color: #363738;
-  width: 90%;
+  width: 80%;
   display: flex;
   border-radius: 10px;
-  flex: 0 0 100%;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  flex: 0 0 100%;
 }
 
 .testimonial-left {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex: 1;
+  height: 400px;
+  width: 80%;
 }
 
 .testimonial-right img {
-  max-width: 100%;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .testimonial-person {
@@ -1000,7 +996,7 @@ footer {
   }
 
   .left-menu{
-    width: 100%;
+    width: 100px;
     align-items: center;
   }
 
@@ -1080,17 +1076,23 @@ footer {
 
   /* Testimonials Section */
 
+  .testimonials-section{
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 10%;
+  }
   .testimonial-container {
-    height: 90%;
+    height: 100%;
     flex-direction: column;
   }
 
   /* Partners Section */
 
   .partners-section {
-    height: 70vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10%;
   }
 
   .partner-row {
@@ -1123,7 +1125,7 @@ footer {
 
   .subscribe-right {
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
   }
 
   .submit-email {
