@@ -923,7 +923,8 @@ footer {
   /* Testimonials Section */
 
   .testimonials-section {
-    height: 80vh;
+    height: 100%;
+    padding-bottom: 10%;
   }
 
   .testimonial-container {
