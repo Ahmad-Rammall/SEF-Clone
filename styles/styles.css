@@ -68,8 +68,7 @@ header img {
   position: relative;
 }
 
-.intro-left::after {
-  content: "";
+.after-element{
   background-color: #2ae29ee3;
   position: absolute;
   top: 0;
@@ -101,6 +100,23 @@ header img {
   font-size: 35px;
   font-weight: 900;
   margin-top: 10px;
+  color: black;
+}
+
+.cursor{
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+.typing{
+  animation: none;
+}
+
+@keyframes blink {
+  0%  { color: black; }
+  50% { color: transparent; }
+  100%  { color: black;}
 }
 
 .intro-desc {

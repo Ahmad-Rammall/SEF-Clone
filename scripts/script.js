@@ -1,3 +1,81 @@
+// Typing Effect
+
+const typingText = document.getElementById("typingText");
+const cursor = document.getElementsByClassName("cursor")[0];
+const title = document.getElementsByClassName("intro-subtitle")[0];
+const description = document.getElementsByClassName("intro-desc")[0];
+const afterElement = document.getElementsByClassName("after-element")[0];
+
+const textArray = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
+
+const typingDelay = 100;
+const erasingDelay = 50;
+const newTextDelay = 2000;
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    changeTextColor(textArrayIndex);
+    if (!cursor.classList.contains("typing")) cursor.classList.add("typing");
+    typingText.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    cursor.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+const changeBackground = (index) => {
+  if (index === 0) section.style.backgroundColor = "yellow";
+};
+
+const changeTextColor = (index) => {
+  switch (index) {
+    case 0:
+      title.style.color = "black";
+      description.style.color = "black";
+      afterElement.style.backgroundColor = "#2ae29ee3";
+      break;
+    case 1:
+      title.style.color = "white";
+      description.style.color = "white";
+      afterElement.style.backgroundColor = "#9764dad5";
+      break;
+    case 2:
+      title.style.color = "white";
+      description.style.color = "white";
+      afterElement.style.backgroundColor = "#fb508fdc";
+      break;
+  }
+};
+
+function erase() {
+  if (charIndex > 0) {
+    if (!cursor.classList.contains("typing")) cursor.classList.add("typing");
+    typingText.textContent = textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursor.classList.remove("typing");
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+
+// Programs Section
+
 const fcsFilter = document.getElementById("fcs");
 const fswFilter = document.getElementById("fsw");
 const fsdFilter = document.getElementById("fsd");
@@ -10,7 +88,7 @@ fcsFilter.addEventListener("click", () => {
   fcsFilter.classList.add("selected-filter");
   removeClass([fswFilter, fsdFilter, uixFilter]);
   fcsFilter.style.color = "#ffc635";
-  addBlackColor([fswFilter,uixFilter,fsdFilter])
+  addBlackColor([fswFilter, uixFilter, fsdFilter]);
   coloredText.style.color = "#ffc635";
   progImg.setAttribute("src", "./assets/fcs.png");
 });
@@ -20,7 +98,7 @@ fswFilter.addEventListener("click", () => {
   fswFilter.classList.add("selected-filter");
   removeClass([fcsFilter, fsdFilter, uixFilter]);
   fswFilter.style.color = "#28eea7";
-  addBlackColor([fcsFilter,uixFilter,fsdFilter])
+  addBlackColor([fcsFilter, uixFilter, fsdFilter]);
   coloredText.style.color = "#28eea7";
   progImg.setAttribute("src", "./assets/fsw.png");
 });
@@ -29,7 +107,7 @@ fsdFilter.addEventListener("click", () => {
   changeProgramsInfo("fsd");
   fsdFilter.classList.add("selected-filter");
   removeClass([fswFilter, fcsFilter, uixFilter]);
-  addBlackColor([fcsFilter,fswFilter,uixFilter])
+  addBlackColor([fcsFilter, fswFilter, uixFilter]);
   fsdFilter.style.color = "#9864da";
   coloredText.style.color = "#9864da";
   progImg.setAttribute("src", "./assets/fsd.png");
@@ -40,7 +118,7 @@ uixFilter.addEventListener("click", () => {
   uixFilter.classList.add("selected-filter");
   removeClass([fswFilter, fsdFilter, fcsFilter]);
   uixFilter.style.color = "#fb508e";
-  addBlackColor([fcsFilter,fswFilter,fsdFilter])
+  addBlackColor([fcsFilter, fswFilter, fsdFilter]);
   coloredText.style.color = "#fb508e";
   progImg.setAttribute("src", "./assets/uix.png");
 });
@@ -98,19 +176,19 @@ const changeProgramsInfo = (id) => {
 
 // FAQs Section
 
-document.getElementById('q-1').addEventListener('click' , () => {
-    toggleElement('answer-1')
-})
+document.getElementById("q-1").addEventListener("click", () => {
+  showAndHideElement("answer-1");
+});
 
-document.getElementById('q-2').addEventListener('click' , () => {
-    toggleElement('answer-2')
-})
+document.getElementById("q-2").addEventListener("click", () => {
+  showAndHideElement("answer-2");
+});
 
-document.getElementById('q-3').addEventListener('click' , () => {
-    toggleElement('answer-3')
-})
+document.getElementById("q-3").addEventListener("click", () => {
+  showAndHideElement("answer-3");
+});
 
-const toggleElement = (element) => {
-    document.getElementById(`${element}`).classList.toggle("hidden")
-    document.getElementById(`${element}`).classList.toggle("visible")
-}
+const showAndHideElement = (element) => {
+  document.getElementById(`${element}`).classList.toggle("hidden");
+  document.getElementById(`${element}`).classList.toggle("visible");
+};
