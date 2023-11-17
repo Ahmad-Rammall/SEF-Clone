@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&family=Work+Sans:wght@300;400&display=swap");
-* {
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior:smooth;
-}
 
 body {
   width: 100%;
@@ -299,17 +292,8 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #363738;
   display: flex;
   flex-direction: row;
-}
-
-.gray-dot {
-  background-color: rgba(128, 128, 128, 0.308);
-}
-
-.green-dot {
-  background-color: #28eea7;
 }
 
 .video {
@@ -387,7 +371,6 @@ iframe {
 }
 
 .programs-container {
-  /* padding-left: 80px; */
   padding-left: 8%;
 }
 
@@ -417,7 +400,6 @@ iframe {
 .program-details {
   background-color: #363738;
   border-radius: 0 10px 10px 10px;
-  /* margin-right: 80px; */
   margin-right: 10%;
   padding: 40px;
 }
@@ -430,40 +412,7 @@ iframe {
 
 .prog-desc {
   font-weight: 500;
-  /* padding-right: 50px; */
   padding-right: 5%;
-}
-
-.yellow-text {
-  color: #ffc635;
-}
-
-.green-text {
-  color: #28eea7;
-}
-
-.purple-text {
-  color: #9864da;
-}
-
-.pink-text {
-  color: #fb508e;
-}
-
-.yellow-background {
-  background-color: #ffc635;
-}
-
-.green-background {
-  background-color: #28eea7;
-}
-
-.purple-background {
-  background-color: #9864da;
-}
-
-.pink-background {
-  background-color: #fb508e;
 }
 
 .prog-details-left {
@@ -477,7 +426,6 @@ iframe {
 }
 
 .prog-btns {
-  /* margin-top: 50px; */
   margin-top: 5%;
   display: flex;
   width: 100%;
@@ -665,10 +613,6 @@ iframe {
   margin-bottom: 10px;
 }
 
-.question-description {
-  /* display: none; */
-}
-
 .link {
   text-decoration: none;
   color: #f1f2f3a4;
@@ -701,14 +645,6 @@ iframe {
 
 .partner {
   object-fit: contain;
-}
-
-.visible{
-  display: block;
-}
-
-.hidden{
-  display: none;
 }
 
 /* Subscribe Section */

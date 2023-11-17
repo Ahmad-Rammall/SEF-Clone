@@ -1,0 +1,59 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.gray-dot {
+  background-color: rgba(128, 128, 128, 0.308);
+}
+
+.green-dot {
+  background-color: #28eea7;
+}
+
+.black-dot {
+  background-color: #363738;
+}
+
+.yellow-text {
+  color: #ffc635;
+}
+
+.green-text {
+  color: #28eea7;
+}
+
+.purple-text {
+  color: #9864da;
+}
+
+.pink-text {
+  color: #fb508e;
+}
+
+.yellow-background {
+  background-color: #ffc635;
+}
+
+.green-background {
+  background-color: #28eea7;
+}
+
+.purple-background {
+  background-color: #9864da;
+}
+
+.pink-background {
+  background-color: #fb508e;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
